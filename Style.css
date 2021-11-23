@@ -1,0 +1,55 @@
+body {
+    background-color: #eceaea;
+}
+
+/* input */
+
+/*checkbox  */
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 16px;
+    border-radius: 5px;
+    border: 1px solid #69bb5a;
+}
+
+.fake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 14px;
+    background: #69bb5a;
+    border-radius: 3px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.checkbox:checked+.fake::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    display: block;
+    width: 20px;
+    height: 14px;
+    background: #cf64a6;
+    border-radius: 3px;
+    margin-top: 1px;
+}
+
+.checkbox:checked+.fake {
+    border: 1px solid #da66da;
+
+}
+
+.check {
+    margin-top: 10px;
+
+}
+
+/* Radio */

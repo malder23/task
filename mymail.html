@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mail</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+        }
+
+        .logo {
+            margin-left: 40px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .user {
+            margin-right: 40px;
+            position: fixed;
+            right: 0;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .mail {
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .account {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+
+        .block {
+            padding: 0 80px 0 20px;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 0 5px 30px;
+        }
+
+        .block:hover {
+            background-color: rgb(235, 196, 196);
+        }
+
+        .menu {
+            float: left;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        .me {
+        
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .names {
+            display: inline-grid;
+            align-items: center;
+            grid-template-columns: 5% 20% 50% 5% 10%;
+            border-bottom: 1px solid #d3d0d0;
+        }
+
+        span {
+            opacity: .6;
+        }
+
+        .star {
+            width: 15px;
+        }
+
+        .screp {
+            width: 15px;
+        }
+
+        .mails {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .conteiner {
+            margin: auto;
+        }
+
+        /* @media (min-width:550px) and (max-width:800px) {
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <div class="logo">
+                <img class="mail" src="icons_hw/mail.png" alt="mail">
+                <p>MY MAIL </p>
+            </div>
+            <div class="user">
+                <p>user@mymail.com</p>
+                <img class="account" src="icons_hw/account.png" alt="account">
+            </div>
+        </header>
+        <hr>
+        <div class="menu">
+            <div class="block">
+                <img src="icons_hw/incom.png" alt="incom">
+                <p>Incoming </p>
+            </div>
+            <div class="block">
+                <img src="icons_hw/outcom.png" alt="outcom">
+                <p>Outgoing </p>
+            </div>
+            <div class="block">
+                <img src="icons_hw/draft.png" alt="draft">
+                <p>Drafts </p>
+            </div>
+            <div class="block">
+                <img src="icons_hw/spam.png" alt="spam">
+                <p>Spam </p>
+            </div>
+        </div>
+
+        <div class="me">
+
+            <div class="names">
+                <img class="star" src="icons_hw/star1.svg" alt="star1">
+                <p>me, Alex</p>
+                <div class="mails">Trip to South America
+                    <span> - Suspendisse ut sapiennon arcu rutrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus. </span>
+                </div>
+                <img class="screp" src="icons_hw/attach_26.png" alt="attach">
+                <div class="date">12 apr. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star1.svg" alt="star1">
+                <p>me, John</p>
+                <div class="mails">Santa Monica Trip
+                    <span> - Suspendisse ut sapiennon arcu rutrum Lorem ipsum dolor sit amet. </span>
+                </div>
+                <img class="screp" src="icons_hw/attach_26.png" alt="attach">
+                <div class="date">11 apr. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star1.svg" alt="star1">
+                <p>me, Alex, John </p>
+                <div class="mails">Birthday Party
+                    <span> - Lorem ipsum dolor sit amet. Suspendisse ut sapiennon arcu rutrum </span>
+                </div>
+                <div></div>
+                <div class="date">10 apr. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star2.svg" alt="star1">
+                <p>Mary Clare </p>
+                <div class="mails">Lorem, ipsum dolor.
+                    <span> - Suspendisse ut sapiennon arcu rutrum Lorem ipsum dolor sit amet. </span>
+                </div>
+                <img class="screp" src="icons_hw/attach_26.png" alt="attach">
+                <div class="date">10 apr. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star1.svg" alt="star1">
+                <p>me, Elena</p>
+                <div class="mails">In spiritus Sancti
+                    <span> - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae. Suspendisse ut sapiennon arcu rutrum </span>
+                </div>
+                <img class="screp" src="icons_hw/attach_26.png" alt="attach">
+                <div class="date">5 apr. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star1.svg" alt="star1">
+                <p>Bill, John </p>
+                <div class="mails">Gone Home!
+                    <span> - Suspendisse ut sapiennon arcu rutrum </span>
+                </div>
+                <div></div>
+                <div class="date">1 apr. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star2.svg" alt="star1">
+                <p>Stive</p>
+                <div class="mails">Trip to South America
+                    <span> - Suspendisse ut sapiennon arcu rutrum </span>
+                </div>
+                <div></div>
+                <div class="date">15 mar. </div>
+            </div>
+            <div class="names">
+                <img class="star" src="icons_hw/star2.svg" alt="star1">
+                <p>Santa Claus </p>
+                <div class="mails">NewYear Party
+                    <span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, incidunt. </span>
+                </div>
+                <img class="screp" src="icons_hw/attach_26.png" alt="attach">
+                <div class="date">10 mar. </div>
+            </div>
+    
+        </div>
+        
+    </div>
+</body>
+</html>
